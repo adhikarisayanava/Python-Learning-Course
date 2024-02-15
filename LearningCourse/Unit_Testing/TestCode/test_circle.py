@@ -17,4 +17,4 @@ class TestCircle(unittest.TestCase):
         self.assertEqual(circle.area(), math.pi * 2.5 * 2.5)
 
     def test_dummy(self):
-        self.assertAlmostEqual(4.4555,4.4557,msg="first and second are not almost equal", delta=0.0001)
+        self.assertAlmostEqual(4.4555, 4.4556, msg="first and second are not almost equal", delta=0.0001)
