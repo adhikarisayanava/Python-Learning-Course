@@ -137,6 +137,6 @@ while True:
 #continue statement
 for index in range(10):
     #print(index % 2)
-    if index % 2:
+    if index % 2 == 0:
         continue
     print(index)

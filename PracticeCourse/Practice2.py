@@ -1,5 +1,5 @@
 #Anagram Program : An anagram is a condition in which one string or number is rearranged in such a way that each character of the rearranged string or number is part of another string or number.
-'''
+
 def checkAnagram(str1, str2):
     list1 = list(str1.lower())
     list2 = list(str2.lower())
@@ -29,7 +29,7 @@ for i in range(number+1):
         print("Buzz")
     else:
         print(i)
-'''
+
 #prime number
 number = int(input("Enter the number:"))
 flag = 0
