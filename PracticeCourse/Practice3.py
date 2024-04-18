@@ -1,3 +1,4 @@
+#Swapping 2 numbers without using third variable and variable scope
 x = 10
 
 def swap(a, b): #a = 5, b = 6
@@ -12,23 +13,7 @@ def swap(a, b): #a = 5, b = 6
 swap(10,15)
 print(f"x is: {x}")
 
-import time
-def timing_decorator(func):
-    def wrapper(time_count):
-            start_time = time.time()
-            ret = func(time_count)
-            stop = time.time()
-            diff = stop - start_time
-            print(f"Time to execute the function is {diff}")
-    return wrapper
-
-@timing_decorator
-def func(n):
-    sum = 0
-    for i in range(n):
-        sum = sum + i
-
-func(1000000)
+##############################################################
 
 #fibonacci series
 #Generator using yield keyword
@@ -42,3 +27,12 @@ f = fibonacci()
 for _ in range(10):
     print(next(f))
 
+##############################################################
+#an iterator is an object that contains a countable number of values and that can be iterated upon. It is used to abstract the process of looping over a collection of items, like lists, tuples, dictionaries, sets, etc.
+def trying_iterator():
+    myList = [1,2,3,4]
+    myIter = iter(myList)
+
+    print(f"\n From Iterator :{next(myIter)}")
+
+trying_iterator()
